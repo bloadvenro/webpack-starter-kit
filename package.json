@@ -1,0 +1,48 @@
+{
+  "name": "webpack-starter-kit",
+  "version": "1.0.0",
+  "description": "frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony -r ts-node/register bin/start.ts",
+    "build": "node --harmony -r ts-node/register bin/build.ts",
+    "docker-start": "bin/docker yarn start",
+    "docker-build": "bin/docker yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/clean-webpack-plugin": "^0.1.0",
+    "@types/connect-livereload": "^0.5.31",
+    "@types/extract-text-webpack-plugin": "^3.0.1",
+    "@types/html-webpack-plugin": "^2.30.1",
+    "@types/open": "^0.0.29",
+    "@types/webpack": "^3.8.4",
+    "@types/webpack-dev-server": "^2.9.2",
+    "@types/webpack-env": "^1.13.5",
+    "autoprefixer": "^8.0.0",
+    "clean-webpack-plugin": "^0.1.18",
+    "connect-livereload": "^0.6.0",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "image-webpack-loader": "^4.1.0",
+    "livereload": "^0.6.3",
+    "open": "^0.0.5",
+    "postcss-loader": "^2.1.0",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0",
+    "style-loader": "^0.20.2",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "write-file-webpack-plugin": "^4.2.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}

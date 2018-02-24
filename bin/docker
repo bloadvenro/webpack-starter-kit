@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# Usage: from project working directory issue "sh bin/docker <cmd args>"
+#
+# Example: sh bin/issue-in-container-shell yarn start
+
+cmd_and_args="$*"
+
+docker run --rm -p 9000:9000 -t -i -v "$(pwd)":/app -w /app node:8.9.1-stretch sh -c "$cmd_and_args"
