@@ -26,9 +26,9 @@ namespace plugins {
         filename: basename(template, extname(template)) + '.html'
       })
   )
-  export const provide = new webpack.ProvidePlugin({
-    React: 'react' // Provide global React namespace for seamless JSX rendering (no explicit react imports).
-  })
+  // export const provide = new webpack.ProvidePlugin({
+  //   React: 'react' // Provide global React namespace for seamless JSX rendering (no explicit react imports).
+  // })
 }
 
 // (Un)comment (un)necessary rules.
