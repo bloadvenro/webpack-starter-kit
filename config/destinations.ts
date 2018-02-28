@@ -1,7 +1,7 @@
 import { join } from 'path'
 import { readdirSync, statSync } from 'fs'
 
-namespace Destinations {
+namespace destinations {
   export namespace directories {
     export const root = join(__dirname, '..')
     export const source = join(root, 'source')
@@ -18,4 +18,4 @@ namespace Destinations {
   }
 }
 
-export { Destinations }
+export default destinations

@@ -2,14 +2,14 @@ import open = require('open')
 import * as WebpackDevServer from 'webpack-dev-server'
 import * as webpack from 'webpack'
 import * as livereload from 'livereload'
-import { Destinations } from '../config/Destinations'
-import { webpackDevelopment } from '../config/webpack/development'
+import destinations from '../config/destinations'
 
 process.env.NODE_ENV = 'development'
 
-const { host, port } = webpackDevelopment.configuration.devServer
-const compiler = webpack(webpackDevelopment.configuration)
-const devServer = new WebpackDevServer(compiler, webpackDevelopment.configuration.devServer)
+const webpackConfig = require('../config/webpack/development')
+const { host, port } = webpackConfig.devServer
+const compiler = webpack(webpackConfig)
+const devServer = new WebpackDevServer(compiler, webpackConfig.devServer)
 
 devServer.listen(port, host, () => {
   open(`http://${host}:${port}/`)
@@ -19,5 +19,5 @@ devServer.listen(port, host, () => {
     .createServer({
       exts: ['html']
     })
-    .watch(Destinations.directories.output)
+    .watch(destinations.directories.output)
 })

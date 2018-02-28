@@ -1,9 +1,10 @@
-import * as webpack from 'webpack'
-import { webpackProduction } from '../config/webpack/production'
+import * as Webpack from 'webpack'
 
 process.env.NODE_ENV = 'production'
 
-webpack(webpackProduction.configuration, (err, webpackStats) => {
+const webpackConfig = require('../config/webpack/production')
+
+Webpack(webpackConfig, (err, webpackStats) => {
   if (err) {
     return console.log(err)
   }
