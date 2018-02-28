@@ -11,6 +11,7 @@
 - full js/css/images/html minification with long-caching support in production and css autoprefixing
 - clarifying configuration commentaries and "uncomment me" sections for quick features activation
 - open browser page in development mode
+- requires/imports from paths like `~/helpers` are performed relatively to the project source dir.
 
 Despite of number of basic features this boilerplate is quite minimalistic and markup-oriented with the possibility to quickly become a SPA scaffolding tool.
 
