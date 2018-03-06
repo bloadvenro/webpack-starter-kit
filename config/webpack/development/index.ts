@@ -17,6 +17,8 @@ module.exports = {
         oneOf: [
           // Uncomment the line below if you use typescript
           // require('./module/rules/typescript'),
+          // Uncomment the line below if you use slim
+          // require('./module/rules/slim'),
           require('./module/rules/css'),
           require('./module/rules/pug'),
           require('./module/rules/fallback') // This rule must be the last one.

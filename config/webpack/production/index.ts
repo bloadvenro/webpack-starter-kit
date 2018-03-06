@@ -20,6 +20,8 @@ module.exports = {
           require('./module/rules/images'),
           // Uncomment the line below if you use typescript
           // require('../development/module/rules/typescript'),
+          // Uncomment the line below if you use slim
+          // require('./module/rules/slim'),
           require('../development/module/rules/pug'),
           require('../development/module/rules/fallback') // This rule must be the last one.
         ]

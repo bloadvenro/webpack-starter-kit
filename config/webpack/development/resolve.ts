@@ -14,6 +14,7 @@ const resolve: Webpack.Resolve = {
     '.js',
     '.pug',
     '.css'
+    // '.slim',
     // '.jsx',
     // '.ts',
     // '.tsx',
