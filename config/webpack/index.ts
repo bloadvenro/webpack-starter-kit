@@ -21,10 +21,12 @@ module.exports = {
         include: destinations.directories.source,
         oneOf: (function(rules: Webpack.Rule[]) {
           !DEV && rules.push(require('./module/rules/images'))
-          // Uncomment the line below if you use typescript
-          // plugins.push(require('./module/rules/typescript'))
           rules.push(require('./module/rules/styles'))
           rules.push(require('./module/rules/templates'))
+          try {
+            require.resolve('ts-loader')
+            rules.push(require('./module/rules/typescript'))
+          } catch {}
           // All internally required project assets without an
           // appropriate loader will be handlerd by fallback rule!
           // This rule must be the last one in the list!

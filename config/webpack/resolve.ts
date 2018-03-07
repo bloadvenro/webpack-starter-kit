@@ -5,7 +5,6 @@ const extensionsMap: { [loader: string]: string | string[] } = {
   'slim-lang-loader': '.slim',
   'pug-loader': '.pug',
   'ts-loader': ['.ts', '.tsx'],
-  'awesome-typescript-loader': ['.ts', '.tsx'],
   'babel-loader': '.jsx',
   'sass-loader': ['.sass', '.scss'],
   'stylus-loader': '.styl',

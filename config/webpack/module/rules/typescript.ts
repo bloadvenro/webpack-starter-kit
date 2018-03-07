@@ -2,11 +2,13 @@ import * as Webpack from 'webpack'
 
 const typescriptRule: Webpack.Rule = {
   test: /\.tsx?$/,
-  loaders: [
-    // Uncomment the line below if you use React.
-    // require.resolve('react-hot-loader/webpack'),
-    require.resolve('ts-loader')
-  ]
+  use: (function(loaders: Webpack.Loader[]) {
+    try {
+      loaders.push(require.resolve('react-hot-loader/webpack'))
+    } catch {}
+    loaders.push(require.resolve('ts-loader'))
+    return loaders
+  })([])
 }
 
 module.exports = typescriptRule
