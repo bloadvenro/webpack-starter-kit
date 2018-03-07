@@ -3,6 +3,7 @@ import destinations from '../destinations'
 import { DEV } from '../env'
 
 module.exports = {
+  context: destinations.directories.source,
   entry: require('./entry'),
   plugins: (function(plugins: Webpack.Plugin[]) {
     plugins.push(require('./plugins/cleanOutputDir'))
