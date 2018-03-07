@@ -7,7 +7,7 @@ const preprocessorData = scanLoaders(
       /\.pug$/,
       [
         {
-          loader: 'pug-loader', // Do not forget to `npm install pug`!
+          loader: 'pug-loader', // Do not forget to `yarn add -D pug`!
           options: {
             pretty: true
           }

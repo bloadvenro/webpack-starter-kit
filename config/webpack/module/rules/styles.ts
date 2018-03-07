@@ -9,7 +9,7 @@ const preprocessorData = scanLoaders([
     /\.(sass|scss)$/,
     [
       {
-        loader: 'sass-loader' // Do not forget to `npm install node-sass`!
+        loader: 'sass-loader' // Do not forget to `yarn add -D node-sass`!
       }
     ]
   ],
@@ -17,7 +17,7 @@ const preprocessorData = scanLoaders([
     /\.styl$/,
     [
       {
-        loader: 'stylus-loader' // Do not forget to `npm install stylus`!
+        loader: 'stylus-loader' // Do not forget to `yarn add -D stylus`!
       }
     ]
   ],
@@ -25,7 +25,7 @@ const preprocessorData = scanLoaders([
     /\.less$/,
     [
       {
-        loader: 'less-loader' // Do not forget to `npm install less`!
+        loader: 'less-loader' // Do not forget to `yarn add -D less`!
       }
     ]
   ]
