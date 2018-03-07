@@ -1,5 +1,5 @@
 import * as CleanPlugin from 'clean-webpack-plugin'
-import destinations from '../../../destinations'
+import destinations from '../../destinations'
 
 module.exports = new CleanPlugin([destinations.directories.output], {
   verbose: true,

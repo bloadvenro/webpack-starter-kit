@@ -2,7 +2,7 @@ import * as Webpack from 'webpack'
 
 process.env.NODE_ENV = 'production'
 
-const webpackConfig = require('../config/webpack/production')
+const webpackConfig = require('../config/webpack')
 
 Webpack(webpackConfig, (err, webpackStats) => {
   if (err) {

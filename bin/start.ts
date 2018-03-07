@@ -6,7 +6,7 @@ import destinations from '../config/destinations'
 
 process.env.NODE_ENV = 'development'
 
-const webpackConfig = require('../config/webpack/development')
+const webpackConfig = require('../config/webpack')
 const { host, port } = webpackConfig.devServer
 const compiler = webpack(webpackConfig)
 const devServer = new WebpackDevServer(compiler, webpackConfig.devServer)
