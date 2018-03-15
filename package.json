@@ -2,7 +2,6 @@
   "name": "webpack-starter-kit",
   "version": "1.0.0",
   "description": "frontend",
-  "main": "index.js",
   "scripts": {
     "start": "yarn && ts-node bin/start.ts",
     "build": "yarn && ts-node bin/build.ts",
@@ -40,5 +39,6 @@
     "webpack-dev-server": "^2.11.1",
     "write-file-webpack-plugin": "^4.2.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "private": true
 }
