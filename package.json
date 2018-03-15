@@ -4,8 +4,8 @@
   "description": "frontend",
   "main": "index.js",
   "scripts": {
-    "start": "yarn && node --harmony -r ts-node/register bin/start.ts",
-    "build": "yarn && node --harmony -r ts-node/register bin/build.ts",
+    "start": "yarn && ts-node bin/start.ts",
+    "build": "yarn && ts-node bin/build.ts",
     "docker-start": "yarn && bin/docker yarn start",
     "docker-build": "yarn && bin/docker yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"
