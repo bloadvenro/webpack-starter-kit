@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "UNLICENSED",
-  "devDependencies": {
+  "dependencies": {
     "@types/clean-webpack-plugin": "^0.1.0",
     "@types/connect-livereload": "^0.5.31",
     "@types/extract-text-webpack-plugin": "^3.0.1",
@@ -39,6 +39,5 @@
     "webpack-dev-server": "^2.11.1",
     "write-file-webpack-plugin": "^4.2.0"
   },
-  "dependencies": {},
   "private": true
 }

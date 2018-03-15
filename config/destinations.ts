@@ -3,7 +3,7 @@ import { readdirSync, statSync } from 'fs'
 
 namespace destinations {
   export namespace directories {
-    export const root = join(__dirname, '..')
+    export const root = join(__dirname, '..', '..')
     export const source = join(root, 'source')
     export const output = join(root, 'output')
     export const assets = {
