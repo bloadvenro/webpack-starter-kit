@@ -40,7 +40,5 @@
     "webpack-dev-server": "^2.11.1",
     "write-file-webpack-plugin": "^4.2.0"
   },
-  "dependencies": {
-    "normalize.css": "^8.0.0"
-  }
+  "dependencies": {}
 }
