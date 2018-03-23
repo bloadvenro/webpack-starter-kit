@@ -19,7 +19,6 @@ module.exports = {
   module: {
     rules: [
       {
-        include: destinations.directories.source,
         oneOf: (function(rules: Webpack.Rule[]) {
           !DEV && rules.push(require('./module/rules/images'))
           rules.push(require('./module/rules/styles'))
